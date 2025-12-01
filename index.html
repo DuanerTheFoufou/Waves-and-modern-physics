@@ -3,452 +3,348 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Physics Core Topics Comprehensive Review (SN3)</title>
+    <title>Comprehensive Physics Review: Exam Readiness Edition</title>
     <style>
         body {
-            font-family: 'Georgia', serif;
+            font-family: 'Times New Roman', serif;
             line-height: 1.6;
             margin: 20px;
-            background-color: #f8f8f8;
-            color: #333;
+            background-color: #f0f4f7;
+            color: #2c3e50;
         }
         .container {
             max-width: 1100px;
             margin: auto;
             background: white;
-            padding: 30px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            padding: 30px 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         h1 {
-            color: #4CAF50;
+            color: #2980b9;
             text-align: center;
-            border-bottom: 3px solid #4CAF50;
-            padding-bottom: 10px;
+            border-bottom: 4px solid #2980b9;
+            padding-bottom: 15px;
+            font-size: 2.2em;
         }
         h2 {
-            color: #00796B;
-            border-left: 5px solid #00796B;
-            padding-left: 10px;
-            margin-top: 35px;
+            color: #27ae60;
+            border-left: 6px solid #27ae60;
+            padding-left: 15px;
+            margin-top: 40px;
+            font-size: 1.8em;
         }
         h3 {
-            color: #388E3C;
-            margin-top: 20px;
-            border-bottom: 1px dashed #388E3C;
+            color: #8e44ad;
+            margin-top: 25px;
+            border-bottom: 1px dashed #dcdcdc;
             padding-bottom: 5px;
+            font-size: 1.4em;
         }
-        .formula {
-            background-color: #e0f2f1;
-            padding: 15px;
-            border-left: 5px solid #004D40;
-            margin: 15px 0;
-            font-family: monospace;
-            font-size: 1.1em;
+        .formula-box {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            margin: 20px 0;
             overflow-x: auto;
         }
         .key-concept {
             font-weight: bold;
-            color: #C2185B;
+            color: #c0392b;
         }
         .detail {
             margin-left: 20px;
             font-size: 0.95em;
             color: #555;
+            padding-top: 5px;
         }
-        .unit-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
+        .math {
+            font-size: 1.2em;
+            display: block;
+            margin: 10px 0;
         }
-        .unit-table th, .unit-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        .box-title {
-            font-weight: bold;
-            color: #00796B;
-            margin-bottom: 5px;
+        ul, ol {
+            padding-left: 25px;
         }
     </style>
+    <!-- MathJax Configuration for LaTeX Rendering -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\\[','\\]']]}
+        });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
 </head>
 <body>
 
 <div class="container">
-    <h1>Comprehensive Physics Core Topics Review: Test Readiness</h1>
-    <p>This review ensures coverage of all concepts, calculations, and formulas from the provided sources, spanning Heat Transfer, Optics/Waves, Quantum Physics, and Special Relativity [i].</p>
+    <h1>Comprehensive Physics Core Topics Review</h1>
+    <p>This document ensures absolute coverage of all topics, calculations, and formulas derived from the comprehensive set of class notes and problem sets provided [i].</p>
 
     <!-- ======================================================================= -->
-    <!-- SECTION 1: HEAT TRANSFER AND THERMAL RESISTANCE (CONDUCTION) -->
+    <!-- SECTION I: HEAT TRANSFER AND THERMAL MODELING -->
     <!-- ======================================================================= -->
     <h2 id="heat-transfer">I. Heat Transfer (Conduction & BBR)</h2>
 
-    <h3>1. Thermal Conduction and Circuits</h3>
-    <p>Conduction is energy transfer through contact and particle collision, without particle migration [1, 2]. Temperature (T) is proportional to kinetic energy (K) [1]. Heat flow is modeled analogously to electric circuits [3].</p>
+    <h3>1. Thermal Conduction and Circuit Analogy</h3>
+    <p>Conduction is the transfer of energy through particle collisions in contact, without particle migration [1]. The rate of heat flow ($P$) is analogous to electric current ($I = \Delta V / R$) [2].</p>
 
-    <div class="formula">
-        Rate of Heat Transfer (Power): 
-        $$P = \frac{\Delta T}{R_{th}}$$ (Unit: W) [3, 4]
-        <br>
-        Thermal Resistance:
-        $$R_{th} = \frac{l}{k A}$$ (Unit: K/W or °C/W) [4, 5]
-        <br>
-        (where $l$ is length/thickness, $k$ is thermal conductivity, $A$ is cross-sectional area, $\Delta T$ is temperature difference).
-    </div>
-    <div class="detail">
-        Thermal Conductivity ($k$): High $k$ materials (like aluminum: $237 \text{ W/m°C}$) transfer heat easily [6]. Low $k$ materials (like air: $0.026 \text{ W/m°C}$) are insulators [7]. An object feels cold if its temperature is lower than your hand and it has high $k$, allowing it to draw heat away quickly [8].
+    <div class="formula-box">
+        <span class="box-title">Conduction Formulas:</span>
+        $$P = \frac{\Delta T}{R_{th}} \quad \text{(Unit: W)}$$
+        $$R_{th} = \frac{l}{k A} \quad \text{(Unit: K/W or } \degree\text{C/W)}$$
+        <p class="detail">Where $l$ is thickness, $A$ is area, and $k$ is thermal conductivity [3, 4].</p>
     </div>
 
-    <h4>Thermal Resistance Combinations</h4>
+    <h4>Thermal Circuit Rules</h4>
     <ul>
-        <li><span class="key-concept">Series Combination:</span> Heat flows through layers sequentially. $P$ is constant across all layers [9].
-            <div class="formula">
-                Equivalent Resistance (Series):
-                $$R_{eq, series} = R_1 + R_2 + R_3 + ...$$ [4]
-            </div>
-            <p class="detail">Used for calculating heat loss through walls (e.g., Brick + Insulation + Drywall) or comparing complex bases (clad cookware) [6, 10].</p>
+        <li><span class="key-concept">Series Combination:</span> Layers are sequential (e.g., Brick then Insulation) [5].
+            $$\mathbf{R_{eq, series} = R_1 + R_2 + R_3 + \ldots}$$
+            <p class="detail">The power ($P$) remains constant through each component in series [5, 6].</p>
         </li>
-        <li><span class="key-concept">Parallel Combination:</span> Heat flows simultaneously through different paths (e.g., wooden studs and insulation). The wall sections are parallel thermal paths [11, 12].
-            <div class="formula">
-                Equivalent Resistance (Parallel):
-                $$\frac{1}{R_{eq, parallel}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ...$$ [4, 13]
-            </div>
-            <p class="detail">The path with lower resistance (higher $k$) carries more heat (a <span class="key-concept">thermal bridge</span>). Total heat flow is dominated by the path with higher $k$, such as wooden studs relative to fiberglass insulation [11, 12]. Complex apartment layouts require thermal circuit diagrams using series and parallel elements to find unknown room temperatures ($T_a, T_b$) and total AC power required [14-17].</p>
+        <li><span class="key-concept">Parallel Combination:</span> Heat flows through paths side-by-side (e.g., wooden studs alongside insulation) [7].
+            $$\mathbf{\frac{1}{R_{eq, parallel}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \ldots}$$
+            <p class="detail">The path with lower resistance (higher thermal conductivity $k$) carries more heat. Wooden studs form a <span class="key-concept">thermal bridge</span> because $k$ for wood is much higher than for typical insulation [8, 9].</p>
         </li>
+        <li><span class="key-concept">Feeling Cold:</span> An object feels cold if its temperature is lower than your hand *and* it has **high thermal conductivity** ($k$), allowing it to rapidly draw heat away [10].</li>
     </ul>
 
-    <h3>2. Blackbody Radiation (BBR) and Planetary Models</h3>
-    <p>BBR describes EM radiation emission based on an object's temperature [18]. An <span class="key-concept">ideal blackbody</span> absorbs all incident radiation ($\epsilon=1$) [19]. Planck introduced the idea that energy is <span class="key-concept">quantized</span> ($E_{oscillation} = n h f$) to explain the BBR spectrum [20, 21].</p>
+    <h3>2. Blackbody Radiation (BBR)</h3>
+    <p>BBR describes EM radiation emitted based on temperature [11]. An ideal blackbody absorbs all incident radiation ($\epsilon=1$) [12].</p>
 
-    <h4>BBR Laws</h4>
-    <div class="formula">
-        Stefan-Boltzmann Law (Intensity emitted):
-        $$I_{emitted} = \epsilon \sigma T^4$$ [22]
-        <br>
-        Total Power Emitted (Luminosity):
-        $$P_{emitted} = \epsilon A \sigma T^4$$ [22]
-        <br>
-        Wien’s Displacement Law (Peak Wavelength):
-        $$\lambda_{max} T = b$$ [18, 22]
-        <br>
-        <p class="detail">If temperature ($T$) increases, $\lambda_{max}$ decreases (shifts toward blue/UV) and total intensity increases proportional to $T^4$ [23, 24]. **Bluish stars are hotter than reddish stars** [25, 26].</p>
+    <div class="formula-box">
+        <span class="box-title">BBR Laws:</span>
+        $$\mathbf{I_{emitted} = \epsilon \sigma T^4} \quad \text{(Stefan-Boltzmann Law)}$$
+        $$\mathbf{\lambda_{max} T = b} \quad \text{(Wien’s Displacement Law)}$$
+        <p class="detail">If $T$ increases, $\lambda_{max}$ decreases (shifts to blue/UV), and total intensity ($I \propto T^4$) increases drastically [11, 13, 14]. **Bluish stars are hotter than reddish stars** [15, 16]. The theory originated from Planck’s proposal that energy is quantized: $E_{oscillation} = n h f$ [17].</p>
     </div>
 
-    <h4>Planetary Equilibrium Temperature</h4>
-    <p>Planets reach equilibrium when power absorbed equals power radiated ($P_{absorbed} = P_{radiated}$) [27].</p>
-    <div class="formula">
-        Intensity Received by Planet (from star power $P_{star}$):
-        $$I_{rec} = \frac{P_{star}}{4 \pi r^2}$$ [22]
-        <br>
-        Equilibrium Temperature (No Atmosphere Model):
-        $$\sigma T_{eq}^4 = \frac{I_{rec}}{4} (1-a)$$
-        <br>
-        (where $a$ is albedo, the fraction reflected) [22, 28]
-    </div>
-
-    <h4>Greenhouse Effect Models (Atmosphere present)</h4>
-    <p>These models account for atmospheric emissivity ($\epsilon$) trapping IR radiation [29].</p>
-    <div class="formula">
-        Single Layer Model (1-Layer):
-        $$T_s = T_{eq} \sqrt{\frac{2}{2-\epsilon}}$$ [22, 29, 30]
-        <br>
-        Infinite Layer Model ($\infty$ layers):
-        $$T_s = T_{eq} \sqrt{\frac{1}{1-\ln(1-\epsilon)}}$$ [22, 31]
-    </div>
-    <div class="detail">
-        <span class="key-concept">Conceptual Note on Divergence:</span> The infinite layer model predicts that as atmospheric emissivity ($\epsilon$) approaches 1, the surface temperature ($T_s$) diverges (approaches infinity) [32, 33]. This is physically impossible and contradicts the Second Law of Thermodynamics [33].
-    </div>
-
-    <h4>Radiative Forcing ($\Delta F$)</h4>
-    <p>Measures energy imbalance due to changing atmospheric composition (like CO$_2$ concentration $C$) [34].</p>
-    <div class="formula">
-        Radiative Forcing due to CO₂:
-        $$\Delta F_{CO_2} = 5.35 \frac{W}{m^2} \ln\left(\frac{C}{278 \text{ ppm}}\right)$$ [22, 34]
-        <br>
-        Temperature Increase ($\Delta T$):
-        $$\Delta T \approx 0.55 \frac{^\circ \text{C} \cdot m^2}{W} \cdot \Delta F$$ [22, 34]
-    </div>
-    <div class="detail">
-        In the Single-Layer Model, increasing $T_{eq}$ (e.g., due to increased solar constant) provides the largest change in surface temperature compared to changes in emissivity $\epsilon$ [35, 36].
+    <h4>Planetary Temperature Models</h4>
+    <p>Equilibrium is reached when absorbed power equals radiated power [18].</p>
+    <div class="formula-box">
+        <span class="box-title">No Atmosphere Model ($T_{eq}$):</span>
+        $$I_{absorbed} = I_{radiated} \quad \Rightarrow \quad \mathbf{\sigma T_{eq}^4 = \frac{I_{rec}}{4} (1-a)}$$
+        <p class="detail">Where $a$ is albedo (fraction reflected) [18, 19]. $I_{rec}$ is the intensity incident on the planet, $I_{rec} = P_{star} / (4 \pi r^2)$ [20, 21].</p>
+        <span class="box-title">Greenhouse Effect (Atmosphere Present):</span>
+        $$\mathbf{T_s = T_{eq} \sqrt[22]{\frac{2}{2-\epsilon_{atm}}}} \quad \text{(Single Layer Model)}$$
+        $$\mathbf{T_s = T_{eq} \sqrt[22]{\frac{1}{1-\ln(1-\epsilon_{atm})}}} \quad \text{(Infinite Layer Model)}$$
+        <p class="detail">Increasing the equilibrium temperature ($T_{eq}$) has the largest impact on surface temperature ($T_s$) in the single-layer model [9, 23]. The infinite layer model predicts **divergence** ($T_s \to \infty$) as atmospheric emissivity ($\epsilon \to 1$), contradicting the Second Law of Thermodynamics [24, 25].</p>
+        <span class="box-title">Radiative Forcing ($\Delta F$):</span>
+        $$\mathbf{\Delta F_{CO_2} = 5.35 \frac{W}{m^2} \ln\left(\frac{C}{278 \text{ ppm}}\right)}$$
+        $$\mathbf{\Delta T \approx 0.55 \frac{\degree\text{C} \cdot m^2}{W} \cdot \Delta F}$$
     </div>
 
     <!-- ======================================================================= -->
-    <!-- SECTION 2: WAVE PHENOMENA AND OPTICS -->
+    <!-- SECTION II: WAVE PHENOMENA AND OPTICS -->
     <!-- ======================================================================= -->
     <h2 id="waves-optics">II. Wave Phenomena and Optics</h2>
 
     <h3>1. Wave Fundamentals and Parameters</h3>
-    <p>General wave displacement is described by $D(x, t)$ [37].</p>
-    <div class="formula">
-        General Wave Displacement:
-        $$D(x, t) = A \cos(\omega t \mp kx + \phi_0)$$ [37]
+    <div class="formula-box">
+        <span class="box-title">General Wave Parameters:</span>
+        $$D(x, t) = A \cos(\omega t \mp kx + \phi_0)$$
+        $$\omega = 2\pi f = \frac{2\pi}{T} \quad \text{and} \quad v = \lambda f = \frac{\omega}{k}$$
+        <p class="detail">For a standing wave on a string fixed at both ends, frequencies are quantized: $f_n = n (v/2L)$, $n=1, 2, 3, \ldots$ [26, 27].</p>
+        <span class="box-title">Intensity:</span>
+        $$\mathbf{I \propto A^2}$$
+        $$\mathbf{I_{sound} = \frac{(\Delta P_{max})^2}{2\rho v}}$$
+    </div>
+
+    <h3>2. Double Slit Interference (Young's Experiment)</h3>
+    <p>Interference is the superposition of coherent waves [28]. It provides experimental proof that light is a wave [29].</p>
+
+    <div class="formula-box">
+        <span class="box-title">Phase and Path Difference:</span>
+        $$\Delta \phi = \frac{2\pi}{\lambda} \Delta r + \Delta \phi_0$$
+        $$\Delta r \approx d \sin(\theta) \quad \text{(Parallel Ray Approx)}$$
         <br>
-        Wave Speed Relation:
-        $$v = \lambda f = \omega/k$$ [37]
+        <span class="box-title">Maxima (Constructive, Bright Fringes):</span>
+        $$\mathbf{d \sin(\theta) = m \lambda} \quad (m=0, \pm 1, \pm 2, \ldots)$$
+        $$\mathbf{y_{max} \approx \frac{m \lambda L}{d}} \quad \text{(Small Angle Approx, } L \gg y)$$
         <br>
-        Angular Frequency, Frequency, Period:
-        $$\omega = 2\pi f = 2\pi/T$$ [37]
-    </div>
-    <h4>Energy and Intensity</h4>
-    <p>Intensity ($I$) is power per area ($I=P/Area$) [38]. $I$ is proportional to the square of the amplitude ($A^2$) [38, 39]. For waves spreading spherically, $I \propto 1/r^2$ [38].</p>
-    <div class="formula">
-        Intensity for Sound Waves:
-        $$I = \frac{(\Delta P_{max})^2}{2\rho v}$$ [38]
+        <span class="box-title">Minima (Destructive, Dark Fringes):</span>
+        $$\mathbf{d \sin(\theta) = (m + 1/2) \lambda} \quad (m=0, \pm 1, \pm 2, \ldots)$$
+        $$\mathbf{y_{min} \approx \frac{(m + 1/2) \lambda L}{d}} \quad \text{(Small Angle Approx)}$$
     </div>
 
-    <h4>Standing Waves (on a String, fixed ends)</h4>
-    <p>For a wave confined to a length $L$, resonance occurs only at specific frequencies quantified by mode number $n$ [40].</p>
-    <div class="formula">
-        Natural Frequencies (String fixed at both ends):
-        $$f_n = n \left(\frac{v}{2L}\right)$$
-        (where $n=1, 2, 3, \ldots$) [40, 41]
+    <p class="detail">The minimum slit separation ($d$) required to observe at least one interference minimum is $\mathbf{d = \lambda/2}$ [30].</p>
+
+    <h4>Intensity and Phasors</h4>
+    <p>For two waves of equal amplitude ($A$):</p>
+    <div class="formula-box">
+        $$A_{tot} = 2A \cos\left(\frac{\Delta\phi}{2}\right)$$
+        $$\mathbf{I_{tot} = I_{max} \cos^2\left(\frac{\Delta \phi}{2}\right)}$$
     </div>
-
-    <h3>2. Interference (Superposition)</h3>
-    <p>Interference occurs when multiple waves are superimposed ($\mathbf{D_{net} = \sum D_i}$) [38]. It requires <span class="key-concept">coherent light</span> ($\Delta \phi_0 = 0$ or constant) [42].</p>
-
-    <h4>Phase and Path Difference</h4>
-    <div class="formula">
-        Phase Difference:
-        $$\Delta \phi = \frac{2\pi}{\lambda} \Delta r + \Delta \phi_0$$ [38, 43]
-        <br>
-        Path Difference (Double Slit, parallel ray approx):
-        $$\Delta r \approx d \sin(\theta)$$ [40, 44]
-    </div>
-
-    <h4>Double Slit Maxima (Constructive) and Minima (Destructive)</h4>
-    <ul>
-        <li><span class="key-concept">Constructive Interference (Maxima):</span> Occurs when $\Delta \phi = 2m\pi$ [43].
-            <div class="formula">
-                Angular Position:
-                $$\mathbf{d \sin(\theta) = m \lambda}$$
-                (where $m=0, \pm 1, \pm 2, \ldots$) [40, 44]
-                <br>
-                Screen Position (Small Angle Approx, $\theta \approx y/L$):
-                $$y_{max} \approx \frac{m \lambda L}{d}$$ [40, 44]
-            </div>
-        </li>
-        <li><span class="key-concept">Destructive Interference (Minima):</span> Occurs when $\Delta \phi = (2m+1)\pi$ [43].
-            <div class="formula">
-                Angular Position:
-                $$\mathbf{d \sin(\theta) = (m + 1/2) \lambda}$$
-                (where $m=0, \pm 1, \pm 2, \ldots$) [40, 44]
-                <br>
-                Screen Position (Small Angle Approx):
-                $$y_{min} \approx \frac{(m + 1/2) \lambda L}{d}$$ [40, 44]
-            </div>
-        </li>
-    </ul>
-    <p class="detail">The minimum slit separation ($d$) required to see at least one interference minimum on the screen is $\mathbf{d = \lambda/2}$ [45].</p>
-
-    <h4>Intensity and Phasor Analysis</h4>
-    <p>The total intensity depends on the phase difference [38].</p>
-    <div class="formula">
-        Total Intensity (Two sources, same amplitude):
-        $$I_{tot} = I_{max} \cos^2\left(\frac{\Delta \phi}{2}\right)$$ [38, 46]
-    </div>
-    <p class="detail"><span class="key-concept">Phasor Diagrams:</span> Represent oscillating motion as rotating vectors (phasors) where amplitude is length and phase is angle. Resultant amplitude is the vector sum [47, 48]. Used to analyze multiple-slit interference, where maxima occur when phasors align ($\Delta \phi = 2m\pi$), and minima occur when they form a closed polygon (e.g., first minimum for three slits is at $\Delta \phi = 2\pi/3$) [49, 50].</p>
+    <p class="detail"><span class="key-concept">Phasors:</span> Represent oscillating motion as vectors (amplitude = length, phase = angle). Resultant amplitude is the vector sum [31, 32]. For $N$ slits, minima occur when phasors form a closed polygon (vector sum is zero), such as $\Delta \phi = 2\pi/N$ [33].</p>
 
     <h3>3. Thin Film Interference</h3>
-    <p>Interference occurs due to waves reflecting off the film's front and back surfaces. The index of refraction in the film is $n_{film}$, and the wavelength inside is $\lambda_n = \lambda / n_{film}$ [40].</p>
+    <p>Involves interference between waves reflected at the top ($n_1 \to n_{film}$) and bottom ($n_{film} \to n_3$) interfaces [34].</p>
+    <ul>
+        <li><span class="key-concept">Phase Shift on Reflection:</span> A **$\pi$ radian ($1/2 \lambda$) phase shift** occurs only when light reflects off a boundary leading to a medium with a **higher** index of refraction ($n_{incident} < n_{reflected}$) [26].</li>
+        <li><span class="key-concept">Conditions:</span> Interference depends on $2t$ (path length in the film) relative to the internal wavelength ($\lambda_n = \lambda/n_{film}$), plus the phase shifts from reflection [26].</li>
+    </ul>
 
-    <p class="key-concept">Phase Shift Rule:</p>
-    <p class="detail">A **$\pi$ radian (or $1/2 \lambda$) phase shift** occurs upon reflection only when light moves from a medium with a lower index of refraction ($n_1$) to one with a higher index ($n_2$) [51].</p>
-
-    <p class="detail">The criteria for constructive or destructive interference (Max/Min reflected light) depend on $2t$ relative to $\lambda_n$ PLUS the total phase shifts incurred from the two reflections [40].</p>
-    <div class="formula">
-        General Conditions for Reflection Maxima/Minima:
-        $$2t = m \lambda_n \quad \text{or} \quad 2t = (m + 1/2) \lambda_n$$
-        <p>The selection depends on the phase shifts at the boundaries (0, 1, or 2 total phase flips) [40].</p>
-    </div>
-
-    <h3>4. Diffraction, Gratings, and Resolution</h3>
+    <h3>4. Diffraction and Resolution</h3>
+    <p>Diffraction is the bending or spreading of waves around edges [29, 35].</p>
 
     <h4>Single Slit Diffraction</h4>
-    <p>Diffraction is the wave's ability to spread out after passing an obstacle [52]. The pattern is observed due to the interference of virtual sources within the single slit [53, 54].</p>
-    <ul>
-        <li><span class="key-concept">Minima Location:</span>
-            <div class="formula">
-                $$a \sin(\theta) = m \lambda$$
-                (where $a$ is slit width, $\mathbf{m=\pm 1, \pm 2, \ldots}$ only, excluding $m=0$) [40, 54]
-            </div>
-        </li>
-        <li><span class="key-concept">Intensity Distribution:</span>
-            <div class="formula">
-                $$I = I_0 \left(\frac{\sin(\beta/2)}{\beta/2}\right)^2 \quad \text{where} \quad \beta = \frac{2\pi}{\lambda} a \sin(\theta)$$ [55]
-            </div>
-        </li>
-    </ul>
-    <p class="detail">The central maximum is approximately **twice as wide** as the secondary maxima [49, 54]. If the ratio $\lambda/a > 1$, no diffraction minima are observed [56].</p>
-    <p class="detail"><span class="key-concept">Suppressed Maxima:</span> In a double-slit experiment where the slit width $a$ is finite, an interference bright fringe is suppressed if it coincides with a diffraction minimum [53, 57].</p>
+    <p>The pattern results from the interference of virtual wavelets across the single slit aperture [36, 37].</p>
+    <div class="formula-box">
+        <span class="box-title">Minima (Dark Fringes) Location:</span>
+        $$\mathbf{a \sin(\theta) = m \lambda} \quad (m=\pm 1, \pm 2, \ldots \text{ only})$$
+        <p class="detail">The central maximum is approximately **twice as wide** as the side maxima [37, 38]. If $\mathbf{\lambda/a > 1}$, no diffraction minima are observed [39].</p>
+        <span class="box-title">Intensity:</span>
+        $$I = I_0 \left(\frac{\sin(\beta/2)}{\beta/2}\right)^2 \quad \text{where } \beta = \frac{2\pi}{\lambda} a \sin(\theta)$$
+    </div>
+    <p class="detail"><span class="key-concept">Suppressed Maxima:</span> In double-slit experiments, an interference bright fringe is suppressed if it coincides with a diffraction minimum ($d/a = m_{int}/m_{diff}$) [40, 41].</p>
 
     <h4>Diffraction Gratings</h4>
-    <p>Grating uses many slits ($N \to \infty$) for dispersion/spectroscopy [58, 59].</p>
-    <div class="formula">
-        Primary Maxima Location:
-        $$d \sin(\theta) = m \lambda$$
-        (where $d$ is the spacing between grooves, $m=0, \pm 1, \pm 2, \ldots$) [60, 61]
+    <p>Used for spectroscopy; separates light into colors because angle depends on wavelength [42].</p>
+    <div class="formula-box">
+        <span class="box-title">Maxima Location:</span>
+        $$\mathbf{d \sin(\theta) = m \lambda} \quad (m=0, \pm 1, \pm 2, \ldots)$$
+        <p class="detail">The $m=0$ order is **not dispersed** [42]. Higher orders overlap, e.g., violet end of $m=3$ overlaps the red end of $m=2$ [43].</p>
     </div>
-    <p class="detail">The $m=0$ order is **not** spread into color components. Higher orders ($m \ge 1$) have greater angular spread (better resolution) but can overlap (e.g., violet $m=3$ overlaps red $m=2$) [58, 62, 63]. The maximum observable order ($m_{max}$) is found by setting $\sin(\theta)=1$ [61].</p>
 
     <h4>Resolution (Rayleigh Criterion)</h4>
-    <p>Resolution depends on minimizing the diffraction spread [64].</p>
-    <div class="formula">
-        Minimum Angular Resolution ($\theta_{min}$):
-        <br>
-        Rectangular Aperture (Slit width $a$):
-        $$\theta_{min} \approx 1 \frac{\lambda}{a}$$ [60]
-        <br>
-        Circular Aperture (Diameter $D$):
-        $$\theta_{min} \approx 1.22 \frac{\lambda}{D}$$ [60, 65]
+    <p>Defines the minimum angular separation ($\theta_{min}$) required to distinguish two point sources [44].</p>
+    <div class="formula-box">
+        <span class="box-title">Minimum Angular Resolution:</span>
+        $$\mathbf{\theta_{min} \approx 1.22 \frac{\lambda}{D}} \quad \text{(Circular Aperture, diameter } D)$$
+        $$\mathbf{\theta_{min} \approx 1 \frac{\lambda}{a}} \quad \text{(Rectangular Aperture, width } a)$$
     </div>
-    <p class="detail">Two sources are just resolvable if their separation equals $\theta_{min}$. Resolution is improved by using a **larger aperture ($D$)** or a **shorter wavelength ($\lambda$)** (e.g., blue light over red light) [65, 66].</p>
+    <p class="detail">Resolution is improved by using a **larger aperture ($D$)** or a **shorter wavelength ($\lambda$)** (e.g., blue light resolves better than red light) [44, 45].</p>
 
     <!-- ======================================================================= -->
-    <!-- SECTION 3: MODERN PHYSICS (QUANTUM MECHANICS) -->
+    <!-- SECTION III: MODERN PHYSICS -->
     <!-- ======================================================================= -->
-    <h2 id="quantum">III. Modern Physics: Quantum Optics & Matter Waves</h2>
-    <p>Quantum physics asserts that energy is quantized into discrete levels and reality exhibits wave-particle duality [67].</p>
+    <h2 id="quantum">III. Modern Physics (Quantum Optics & Matter Waves)</h2>
 
-    <h3>1. The Photoelectric Effect (Light as a Particle)</h3>
-    <p>Light consists of photons, discrete energy packets [68]. The photoelectric effect is the release of electrons (photoelectrons) when light hits a metal [69].</p>
-    <div class="formula">
-        Photon Energy:
-        $$E_{photon} = h f = \frac{h c}{\lambda}$$ [22, 70]
+    <h3>1. Photoelectric Effect (Light as a Particle)</h3>
+    <p>Einstein explained this effect by proposing the photon, confirming light's particle nature [46].</p>
+
+    <div class="formula-box">
+        <span class="box-title">Photon Energy and Momentum:</span>
+        $$E_{photon} = h f = \frac{h c}{\lambda}$$
+        $$p = \frac{E}{c} = \frac{h}{\lambda}$$
         <br>
-        Photon Momentum:
-        $$p = \frac{E}{c} = \frac{h}{\lambda}$$ [22, 71]
+        <span class="box-title">Photoelectric Equation:</span>
+        $$\mathbf{K_{max} = h f - \phi}$$
+        $$\mathbf{K_{max} = e |\Delta V_{stop}|}$$
     </div>
 
-    <h4>Photoelectric Equation and Observations</h4>
-    <p>The equation summarizes the conservation of energy in the photon-electron collision [72].</p>
-    <div class="formula">
-        Photoelectric Equation:
-        $$\mathbf{K_{max} = h f - \phi}$$ [22, 70, 72]
-        <br>
-        Maximum Kinetic Energy:
-        $$K_{max} = \frac{1}{2} m v_{max}^2 = e |\Delta V_{stop}|$$ [22, 73]
-    </div>
     <ul>
-        <li><span class="key-concept">Work Function ($\phi$):</span> Minimum energy required for an electron to escape the metal [72]. Related to the cutoff frequency ($f_c$): $\mathbf{\phi = h f_c = h c / \lambda_c}$ [72].</li>
-        <li><span class="key-concept">$K_{max}$ Dependence:</span> $K_{max}$ depends only on the **frequency ($f$)** of light, not the intensity ($I$) [72, 74].</li>
-        <li><span class="key-concept">Intensity ($I$):</span> Intensity determines the **quantity (number) of photons** per second, which dictates the electric current (number of photoelectrons ejected) [74]. Increasing $I$ increases current but not $K_{max}$ [74, 75].</li>
-        <li><span class="key-concept">Time Delay:</span> Ejection is observed instantly, proving the instantaneous absorption of photon energy, contrary to wave theory prediction of a gradual energy absorption delay [76].</li>
-        <li><span class="key-concept">Graphical Analysis:</span> A plot of $K_{max}$ vs. $f$ has a slope equal to **Planck's constant ($h$)**, regardless of the metal used [69, 72]. The horizontal intercept is $f_c$; the vertical intercept is $-\phi$ [69].</li>
+        <li><span class="key-concept">Work Function ($\phi$):</span> Minimum energy to eject an electron [47]. Related to the cutoff frequency ($f_c$): $\mathbf{\phi = h f_c}$ [20].</li>
+        <li><span class="key-concept">Kinetic Energy ($K_{max}$):</span> Depends only on the **frequency ($f$)** of the light, not the intensity ($I$) [47, 48].</li>
+        <li><span class="key-concept">Intensity ($I$):</span> Determines the **number of photons** ($N/\text{m}^2\text{s}$) and thus the electric current, but does not affect $K_{max}$ [48, 49].</li>
+        <li><span class="key-concept">Graphical Analysis:</span> Plotting $K_{max}$ vs. $f$ yields a straight line with a **slope equal to $h$** (Planck's constant), regardless of the metal [47, 50].</li>
     </ul>
 
-    <h3>2. Matter Waves and Quantized Energy</h3>
+    <h3>2. Matter Waves and Quantization</h3>
 
-    <h4>Matter Waves (De Broglie Hypothesis)</h4>
-    <p>Particles of matter exhibit wave characteristics, linked by momentum $p$ [77].</p>
-    <div class="formula">
-        De Broglie Wavelength:
-        $$\lambda = \frac{h}{p} = \frac{h}{\gamma m v}$$ [22, 77]
+    <h4>De Broglie Hypothesis</h4>
+    <p>Matter particles exhibit wave characteristics [51].</p>
+    <div class="formula-box">
+        $$\mathbf{\lambda = \frac{h}{p} = \frac{h}{\gamma m v}}$$
     </div>
-    <p class="detail">For macroscopic objects, $\lambda$ is extremely small, making the wave nature unmeasurable [78]. However, particles like electrons exhibit diffraction and interference, governed by $\lambda = h/p$ [78, 79].</p>
 
     <h4>Confined Particles (Particle in a Box)</h4>
-    <p>A particle confined to a length $L$ must form a standing wave ($\lambda_n = 2L/n$) [22, 80, 81].</p>
-    <div class="formula">
-        Allowed Kinetic Energies:
+    <p>Confinement restricts the particle's wave function to standing waves, leading to quantized energy [52, 53].</p>
+    <div class="formula-box">
+        Allowed Wavelengths (1D Box):
+        $$\lambda_n = \frac{2L}{n} \quad (n=1, 2, 3, \ldots)$$
+        <br>
+        Allowed Energies:
         $$E_n = \frac{h^2 n^2}{8 m L^2}$$
-        (where $n=1, 2, 3, \ldots$) [22]
     </div>
-    <p class="detail">The location where the probability of finding the particle is maximum (high probability) corresponds to the **antinodes** of the standing wave ($\mathbf{|\psi|^2}$) [80, 82].</p>
+    <p class="detail"><span class="key-concept">Probability:</span> The square of the wave function, $|\psi|^2$, represents the probability density of finding the particle. Maxima occur at the antinodes of the standing wave [54-56].</p>
 
-    <h4>Bohr Model of the Atom (H only)</h4>
-    <p>The Bohr model applies to hydrogen or any one-electron ion [83, 84]. It was developed to explain atomic stability, arguing that electrons occupy stable orbits only if their angular momentum ($L$) is quantized [85].</p>
-    <div class="formula">
+    <h4>Bohr Model (Hydrogen Atom)</h4>
+    <p>Applies quantization to the electron's angular momentum to ensure stable orbits [57].</p>
+    <div class="formula-box">
         Quantized Angular Momentum (Bohr Postulate):
-        $$L = m v r = n \frac{h}{2\pi} = n \hbar$$ [22, 85]
+        $$\mathbf{L = m v r = n \hbar}$$
         <br>
-        Energy Levels (Total Energy):
-        $$E_n = -\frac{13.6 \text{ eV}}{n^2}$$
-        (where $n=1$ is the ground state) [22, 86, 87]
+        Energy Levels:
+        $$\mathbf{E_n = -\frac{13.6 \text{ eV}}{n^2}}$$
         <br>
-        Emitted/Absorbed Photon Energy:
-        $$E_{photon} = |E_i - E_f|$$ [22, 88]
+        Photon Energy for Transitions:
+        $$E_{photon} = |E_i - E_f| = \frac{h c}{\lambda}$$
     </div>
-    <p class="detail">**Absorption:** Requires a photon with **exact** energy matching the transition gap $E_f - E_i$ [88, 89]. **Emission:** Occurs when an electron drops from high $n$ to low $n$, emitting a photon [88]. The Balmer series corresponds to transitions down to $\mathbf{n=2}$ (visible light) [90, 91]. **Ionization** occurs if the absorbed energy is enough to reach $E_{\infty} = 0$ [89].</p>
+    <p class="detail">Electrons absorb a photon with the **exact energy** corresponding to $E_f - E_i$ to jump up [58, 59]. The **Balmer series** consists of transitions dropping to the $n=2$ orbital (visible light) [60, 61]. Ionization occurs when an electron reaches $E_{\infty}=0$ [58].</p>
 
     <!-- ======================================================================= -->
-    <!-- SECTION 4: SPECIAL RELATIVITY -->
+    <!-- SECTION IV: SPECIAL RELATIVITY -->
     <!-- ======================================================================= -->
     <h2 id="relativity">IV. Special Relativity</h2>
-    
-    <h3>1. Postulates and Frames of Reference</h3>
-    <p>Special Relativity deals with inertial (non-accelerating) frames [92].</p>
+
+    <h3>1. Einstein's Postulates</h3>
     <ol>
-        <li>The laws of physics are the same in all inertial frames [92].</li>
-        <li>The speed of light ($c$) in a vacuum is constant for all inertial observers [92].</li>
+        <li>The laws of physics are the same in all inertial (non-accelerating) frames [62].</li>
+        <li>The speed of light ($c$) in vacuum is constant for all inertial observers [62].</li>
     </ol>
 
-    <div class="formula">
-        Lorentz Factor:
-        $$\gamma = \frac{1}{\sqrt{1 - v^2/c^2}}$$ [60, 93]
+    <div class="formula-box">
+        <span class="box-title">Lorentz Factor:</span>
+        $$\mathbf{\gamma = \frac{1}{\sqrt{1 - v^2/c^2}}}$$
     </div>
-    <p class="detail">Relativistic effects are significant when $\beta = v/c$ is substantial, causing $\gamma$ to be greater than 1 [93].</p>
 
     <h3>2. Kinematic Effects</h3>
-    <p>The concepts of proper time ($\Delta t_p$) and proper length ($L_p$) are fundamental [94].</p>
+    <p>The definitions of proper time ($\Delta t_p$) and proper length ($L_p$) are critical [63].</p>
     <ul>
-        <li><span class="key-concept">Proper Time ($\Delta t_p$):</span> The shortest time interval between two events, measured by an observer in whose frame the two events occur at the **same spatial position** [60, 94, 95].
-            <div class="formula">
+        <li><span class="key-concept">Proper Time ($\Delta t_p$):</span> The shortest time interval, measured in the frame where the two events occur at the **same spatial position** [63-65].
+            <div class="formula-box">
                 Time Dilation:
-                $$\Delta t = \gamma \Delta t_p$$ (Moving clock runs slower, $\Delta t$ observed is longer) [60]
+                $$\mathbf{\Delta t = \gamma \Delta t_p}$$
             </div>
         </li>
-        <li><span class="key-concept">Proper Length ($L_p$):</span> The longest distance between two points, measured in the frame where the object is **at rest** [60, 94].
-            <div class="formula">
+        <li><span class="key-concept">Proper Length ($L_p$):</span> The longest measured length, measured in the frame where the object is **at rest** [63, 64].
+            <div class="formula-box">
                 Length Contraction:
-                $$L = \frac{L_p}{\gamma} = L_p \sqrt{1 - v^2/c^2}$$ (Moving length $L$ observed is shorter) [60, 94]
+                $$\mathbf{L = \frac{L_p}{\gamma}}$$
             </div>
         </li>
+        <li><span class="key-concept">Simultaneity:</span> Events simultaneous in one frame are generally **not simultaneous** in a moving frame [66, 67].</li>
     </ul>
-    <p class="detail"><span class="key-concept">Relativity of Simultaneity:</span> Two events judged simultaneous in one frame are generally **not simultaneous** in a different frame moving relative to the first [96].</p>
 
     <h3>3. Relativistic Energy and Momentum</h3>
-    <div class="formula">
-        Relativistic Momentum:
-        $$\mathbf{p = \gamma m v}$$ [60, 97]
+    <div class="formula-box">
+        <span class="box-title">Relativistic Energy and Momentum:</span>
+        $$\mathbf{p = \gamma m v}$$
+        $$\mathbf{E = \gamma m c^2}$$
+        $$E_{0} = m c^2 \quad \text{(Rest Energy)}$$
+        $$\mathbf{K = (\gamma - 1) m c^2} \quad \text{(Kinetic Energy)}$$
         <br>
-        Total Energy:
-        $$\mathbf{E = \gamma m c^2}$$ [60, 97]
-        <br>
-        Rest Energy:
-        $$E_0 = m c^2$$ [60, 97]
-        <br>
-        Relativistic Kinetic Energy:
-        $$\mathbf{K = (\gamma - 1) m c^2}$$ [60, 97]
-        <br>
-        Energy-Momentum Relation:
-        $$\mathbf{E^2 = p^2 c^2 + (m c^2)^2}$$ [60, 98]
+        <span class="box-title">Energy-Momentum Relation:</span>
+        $$\mathbf{E^2 = p^2 c^2 + (m c^2)^2}$$
     </div>
-    <p class="detail">Kinetic energy is the excess energy beyond the rest energy ($E = K + E_0$) [97]. For a massless particle like a photon, $E = pc$ [71]. If total energy is $N$ times the rest energy, then $\gamma = N$ [99].</p>
+    <p class="detail">For a particle with zero mass (like a photon), the relation simplifies to $E=pc$ [68]. If total energy $E$ equals $N$ times the rest energy $E_0$, then $\gamma = N$ [69].</p>
 
     <!-- ======================================================================= -->
-    <!-- CONSTANTS AND CONVERSIONS -->
+    <!-- SECTION V: CONSTANTS -->
     <!-- ======================================================================= -->
-    <hr>
-    <h2>V. Essential Constants and Conversions</h2>
+    <h2 id="constants">V. Essential Constants and Conversions</h2>
     <div class="unit-table">
         <thead>
-            <tr><th>Symbol</th><th>Value (from source list)</th><th>Topic</th></tr>
+            <tr><th>Symbol</th><th>Value (Source Reference)</th><th>Description</th></tr>
         </thead>
         <tbody>
-            <tr><td>$c$</td><td>$299\,792\,458 \text{ m/s} \approx 3\times 10^8 \text{ m/s}$</td><td>Relativity/General</td></tr>
-            <tr><td>$h$</td><td>$6.626\times 10^{-34} \text{ J}\cdot\text{s}$ (Planck's constant)</td><td>Quantum</td></tr>
-            <tr><td>$hc$</td><td>$1240.0 \text{ eV}\cdot\text{nm}$ (Energy shortcut)</td><td>Quantum</td></tr>
-            <tr><td>$\sigma$</td><td>$5.67 \times 10^{-8} \text{ W/m}^2\text{K}^4$ (Stefan-Boltzmann)</td><td>BBR</td></tr>
-            <tr><td>$b$</td><td>$2.898\times 10^{-3} \text{ m}\cdot\text{K}$ (Wien's constant)</td><td>BBR</td></tr>
-            <tr><td>$e$</td><td>$1.602\times 10^{-19} \text{ C}$ (Elementary charge)</td><td>Quantum</td></tr>
-            <tr><td>$1 \text{ eV}$</td><td>$1.602\times 10^{-19} \text{ J}$ (Energy conversion)</td><td>Quantum</td></tr>
-            <tr><td>$E_n$ (H atom $n=1$)</td><td>$-13.6 \text{ eV}/n^2$</td><td>Bohr Model</td></tr>
-            <tr><td>$a_0$ (Bohr radius)</td><td>$0.0529 \text{ nm}$</td><td>Bohr Model</td></tr>
-            <tr><td>$1 \text{ kWh}$</td><td>$3.6 \times 10^6 \text{ J}$</td><td>Heat Transfer/Cost</td></tr>
+            <tr><td>$c$</td><td>$299\,792\,458 \text{ m/s} \approx 3\times 10^8 \text{ m/s}$ [64]</td><td>Speed of light in vacuum</td></tr>
+            <tr><td>$h$</td><td>$6.626\times 10^{-34} \text{ J}\cdot\text{s}$ [64]</td><td>Planck's constant</td></tr>
+            <tr><td>$\hbar$</td><td>$h/(2\pi) = 1.055\times 10^{-34} \text{ J}\cdot\text{s}$ [64]</td><td>Reduced Planck's constant</td></tr>
+            <tr><td>$hc$</td><td>$1240.0 \text{ eV}\cdot\text{nm}$ (or $1242.4 \text{ eV}\cdot\text{nm}$) [64, 70]</td><td>Useful conversion factor</td></tr>
+            <tr><td>$\sigma$</td><td>$5.67 \times 10^{-8} \text{ W/m}^2\text{K}^4$ [64]</td><td>Stefan-Boltzmann constant</td></tr>
+            <tr><td>$b$</td><td>$2.898\times 10^{-3} \text{ m}\cdot\text{K}$ [64]</td><td>Wien's constant</td></tr>
+            <tr><td>$e$</td><td>$1.602\times 10^{-19} \text{ C}$ [64]</td><td>Elementary charge</td></tr>
+            <tr><td>$1 \text{ eV}$</td><td>$1.602\times 10^{-19} \text{ J}$ [64]</td><td>Electronvolt conversion</td></tr>
+            <tr><td>$E_1$ (H atom)</td><td>$-13.6 \text{ eV}$ [20]</td><td>Ground state energy</td></tr>
+            <tr><td>$a_0$ (Bohr radius)</td><td>$0.0529 \text{ nm}$ [20]</td><td>Radius of $n=1$ H orbit</td></tr>
+            <tr><td>$1 \text{ kWh}$</td><td>$3.6 \times 10^6 \text{ J}$ [64]</td><td>Energy unit for utility cost</td></tr>
         </tbody>
     </table>
-    
 </div>
 </body>
 </html>
